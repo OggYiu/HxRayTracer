@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "budo index.js:bundle.js --live",
+    "build": "browserify index.js > bundle.js",
     "test": "./node_modules/.bin/cucumber-js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify-fs": "^1.0.0",
     "budo": "^11.6.4",
     "canvas": "^2.6.1"
   },
